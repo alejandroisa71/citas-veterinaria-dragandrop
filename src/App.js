@@ -76,7 +76,6 @@ function App() {
               <Droppable droppableId="citas">
                 {(droppableProvided) => (
                   <ul
-                    className="cita-container"
                     {...droppableProvided.droppableProps}
                     ref={droppableProvided.innerRef}
                   >
@@ -91,7 +90,6 @@ function App() {
                             {...draggableProvided.draggableProps}
                             ref={draggableProvided.innerRef}
                             {...draggableProvided.dragHandleProps}
-                            className="cita-item"
                           >
                             <Cita
                               cita={cita}
